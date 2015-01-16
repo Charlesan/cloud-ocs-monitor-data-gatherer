@@ -115,7 +115,7 @@ public class NetworkDataGathererServiceImpl implements NetworkDataGathererServic
 				String foreignAddressPort = formatAddress(conn.getType(),
 						conn.getRemoteAddress(), conn.getRemotePort(),
 						RADDR_LEN, true);
-				System.out.println("foreignAddressPort: " + foreignAddressPort);
+//				System.out.println("foreignAddressPort: " + foreignAddressPort);
 				String foreignAddress = foreignAddressPort.substring(0, foreignAddressPort.lastIndexOf(':'));
 //				System.out.println("foreignAddress: " + foreignAddress);
 //				

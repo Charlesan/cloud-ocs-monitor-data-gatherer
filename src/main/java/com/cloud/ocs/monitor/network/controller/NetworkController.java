@@ -2,19 +2,14 @@ package com.cloud.ocs.monitor.network.controller;
 
 import javax.annotation.Resource;
 
-import org.hyperic.sigar.SigarException;
-import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cloud.ocs.monitor.network.dto.RequestNumDto;
 import com.cloud.ocs.monitor.network.dto.RxbpsTxbpsDto;
 import com.cloud.ocs.monitor.network.service.NetworkDataGathererService;
-import com.cloud.ocs.monitor.utils.NetworkData;
-import com.cloud.ocs.monitor.utils.SigarUtil;
 
 @Controller
 @RequestMapping(value="/gatherer/network")
